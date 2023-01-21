@@ -1,0 +1,44 @@
+body{
+  background: black;
+}
+h2{
+  color: cyan;
+  font-family: serif;
+  text-shadow: 2px 2px 2px white;
+  text-align: center;
+  margin-top: 80%;
+  
+}
+nav{
+  display: flex;
+  margin: auto;
+}
+a{
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+  letter-spacing: .5px;
+  padding: 0 20px;
+  cursor: pointer;
+  margin-top: 20%;
+}
+a:before, a:after{
+  content:"";
+  position: absolute;
+  height: 1.5px;
+  width:0;
+  background: deepskyblue;
+  transition: 1s;
+}
+a:after{
+  left: 0;
+  bottom: -10px;
+}
+a:before{
+  right:0;
+  top:-10px;
+}
+a:hover:after, a:hover:before{
+  width:100%;
+}
